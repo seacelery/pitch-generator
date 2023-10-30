@@ -1,0 +1,243 @@
+* {
+    font-family: Lato;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #9acfce;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+h1 {
+    margin: 100px auto 0 auto;
+    color: #053a47;
+    text-align: center;
+}
+
+#container {
+    width: 750px;
+    margin: 0 auto;
+}
+
+#play-container {
+    margin-top: -45px;
+}
+
+#play-button {
+    padding-bottom: 5px;
+    margin-left: 0px;
+    width: 80px;
+    height: 60px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+#playing-icon {
+    margin-left: 15px;
+    color: #053a47;
+    font-size: 22px;
+}
+
+#frequency-slider {
+    display: block;
+    margin: 0 auto;
+    -webkit-appearance: none;
+    width: 750px;
+    height: 22px;
+    border-radius: 5px;  
+    background: #5a8894;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #96caca;
+}
+  
+#frequency-slider::-moz-range-thumb {
+    width: 23px;
+    height: 25px;
+    border: 0;
+    cursor: pointer;
+}
+
+#frequency-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    border-radius: 2px;
+    height: 25px;
+    background: #cdfffe;
+    cursor: pointer;
+}
+
+#controls {
+    display: inline-block;
+    width: 1000px;
+    height: 70px;
+    margin-top: 5px;
+}
+  
+#volume-container {
+    display: inline-block;
+    color:#053a47;
+    font-weight: 1000;
+    width: 200px;
+    transform: translateY(-27px);
+}
+
+#volume-slider {
+    border: 2px solid #96caca;
+    -webkit-appearance: none;
+    width: 120px;
+    height: 13px;
+    border-radius: 5px;  
+    background: #5a8894;
+}
+  
+#volume-slider::-moz-range-thumb {
+    width: 23px;
+    height: 25px;
+    border: 0;
+    cursor: pointer;
+}
+
+#volume-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 8px;
+    border-radius: 2px;
+    height: 14px;
+    background: #cdfffe;
+    cursor: pointer;
+}
+
+#pitch-display {
+    display: inline-block;
+    margin: 0 auto 0 91px;
+    text-align: center;
+    color: #053a47;
+    font-size: 24px;
+    width: 160px;
+}
+
+#pitch {
+    display: inline-block;
+    width: 90px;
+}
+
+#raise-pitch, #reduce-pitch {
+    color: #4a7985;
+    font-size: 30px;
+    user-select: none;
+}
+
+#raise-pitch:hover, #reduce-pitch:hover {
+    color: #2c555f;
+    cursor: pointer;
+}
+
+#toggle-notes-button-container {
+    width: 50px;
+    display: inline-block;
+    transform: translateY(-27px);
+    margin-left: 182px;
+}
+
+#toggle-notes-button {
+    width: 50px;
+    height: 40px;
+}
+
+#wave-types-button-container {
+    width: 50px;
+    display: inline-block;
+    transform: translateY(-27px);
+    margin-left: 5px;
+}
+
+#wave-types-button {
+    height: 40px;
+    width: 50px;
+}
+
+#note {
+    font-weight: 1000;
+    font-size: 18px;
+}
+
+button {
+    background-color: #5a8894;
+    color: #defdfd;
+    border-radius: 3px;
+    border: 1px solid #96caca;
+}
+
+#note-buttons {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(9, 5rem);
+    gap: 3px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.note-button {
+    height: 50px;
+}
+
+.note-button-note {
+    font-size: 14px;
+    color: #cefafa;
+    font-weight: 1000;
+}
+
+.note-button-freq {
+    font-size: 14px;
+    margin-top: -13px;
+}
+
+#wave-types {
+    margin-top: -30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 560px;
+    background-color: #43737e;
+    width: 325px;
+    height: 50px;
+    padding: 10px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: 3px;
+}
+
+.wave-button {
+    height: 35px;
+    width: 70px;
+    user-select: none;
+}
+
+button:hover {
+    background-color: #49a09e;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #3b918f;
+}
+
+.dark {
+    background-color: #1b7271 !important;
+}
+
+#wave-types::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 152px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #1d697c;
+}

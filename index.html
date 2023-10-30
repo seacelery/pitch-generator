@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="FCC Bar Chart" />
+        <title>Pitch Generator</title>
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="styles.css" />
+        <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    </head>
+    <body>
+        <h1>Pitch Generator</h1>
+        <div id="container" >
+            <div id="play-container">
+                <button id="play-button" >Play</button>
+                <span id="playing-icon"><i class="fa-solid fa-volume-high"></i></span>
+            </div>
+            
+            <input id="frequency-slider" type="range" min="1" max="1000" value="390" >
+            <div id="controls" >
+                <span id="volume-container">
+                    <i class="fa-solid fa-sliders"></i>
+                    <input id="volume-slider" type="range" min="0" max="1" value="0.5" step="0.01" >
+                    <span id="volume-value" ></span>
+                </span>
+                <span>
+                <span id="pitch-display" >
+                    <i class="fa-solid fa-circle-chevron-left" id="reduce-pitch" ></i>
+                    <div id="pitch">
+                        <span id="pitch-value" ></span>
+                    </div>
+                    <i class="fa-solid fa-circle-chevron-right" id="raise-pitch" ></i>
+                    <br>
+                    <span id="note" ></span>
+                </span>
+                <span id="toggle-notes-button-container">
+                    <button id="toggle-notes-button">Notes</button>
+                </span>
+                <span id="wave-types-button-container">
+                    <button id="wave-types-button">Wave</button>
+                </span>
+            </div>
+            <div id="wave-types">
+                <button id="sine" class="wave-button dark" >Sine</button>
+                <button id="square" class="wave-button" >Square</button>
+                <button id="triangle" class="wave-button" >Triangle</button>
+                <button id="sawtooth" class="wave-button" >Sawtooth</button>
+            </div>
+            <div id="note-buttons"></div>
+        </div>
+        <script src="script.js" ></script>
+    </body>
+</html>
+
